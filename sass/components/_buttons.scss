@@ -1,0 +1,16 @@
+/* button hero */
+.button {
+	color: $text-white-color;
+	background-color: $accent-color;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	min-width: 200px;
+	padding: 10px 32px;
+	border-radius: 4px;
+	text-decoration: none;
+	display: inline-block;
+	border: 1px solid transparent;
+}
