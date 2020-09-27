@@ -1,0 +1,50 @@
+.footer {
+	background-color: $background-color;
+}
+.address-items {
+	margin-top: 20px;
+}
+.address-info {
+	color: $text-white-color;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+}
+.nav-item {
+	color: $contacts-footer-color;
+	text-decoration: none;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+	display: inline-block;
+	margin-top: 9px;
+}
+.nav-item:hover {
+	color: $accent-color;
+}
+
+.logo-style {
+	color: $accent-color;
+	margin-top: 60px;
+}
+.logo-over {
+	color: $text-white-color;
+	text-decoration: none;
+	font-family: Raleway, sans-serif;
+	letter-spacing: 0.03em;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.19;
+}
+
+.container-footer {
+	display: flex;
+	width: 1200px;
+	padding: 60px 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
