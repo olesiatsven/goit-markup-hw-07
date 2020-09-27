@@ -5,6 +5,10 @@
 .site-nav {
 	display: flex;
 	margin-left: 93px;
+
+	&:hover::after .link.line {
+		opacity: 1;
+	}
 }
 
 .site-nav .item:not(:last-child) {
@@ -15,7 +19,6 @@
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-
 	color: $title-text-color;
 	text-decoration: none;
 	font-family: Roboto;
@@ -24,12 +27,12 @@
 	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 0.02em;
-}
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-	color: $accent-color;
-	transition: color 250ms $animation;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+		transition: color 250ms $animation;
+	}
 }
 
 .site-nav .link.line:hover,
@@ -59,8 +62,4 @@
 	border-radius: 2px;
 	opacity: 0.7;
 	transition: opacity 250ms $animation;
-}
-
-.site-nav:hover::after .link.line {
-	opacity: 1;
 }

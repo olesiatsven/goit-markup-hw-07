@@ -86,14 +86,14 @@
 	display: flex;
 	padding-left: 0;
 	padding-right: 0;
-}
 
-.work-list .item {
-	width: calc((100% - 30px * 2) / 3);
-	margin-right: 30px;
-}
-.work-list .item:last-child {
-	margin-right: 0;
+	& .item {
+		width: calc((100% - 30px * 2) / 3);
+		margin-right: 30px;
+	}
+	& .item:last-child {
+		margin-right: 0;
+	}
 }
 
 .title-main {

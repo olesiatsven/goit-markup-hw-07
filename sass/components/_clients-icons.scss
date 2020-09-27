@@ -41,23 +41,24 @@
 	border: 1px solid $social-icons-color;
 	border-radius: 4px;
 	transition: background-color 250ms $animation;
-}
 
-.clients-item:not(:last-child) {
-	margin-right: 30px;
+	&:hover .clients-icon {
+		fill: $accent-color;
+	}
+
+	&:hover {
+		border: 1px solid $accent-color;
+	}
 }
 
 .clients-item {
 	width: calc((100% - 30px * 5) / 6);
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
 }
 
 .clients-icon {
 	transition: fill 250ms $animation;
-}
-.clients-link:hover .clients-icon {
-	fill: $accent-color;
-}
-
-.clients-link:hover {
-	border: 1px solid $accent-color;
 }

@@ -14,13 +14,12 @@
 	font-size: 14px;
 	line-height: 16px;
 	display: flex;
-}
 
-.contacts .link:hover,
-.contacts .link:focus {
-	color: $accent-color;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
-
 /* Icons contacts */
 
 .link {
@@ -30,12 +29,13 @@
 	margin: 0;
 	padding: 6px 0;
 	transition: color 250ms $animation;
+
+	&:hover.contacs-icon {
+		color: $accent-color;
+		fill: $accent-color;
+	}
 }
 
-.link:hover.contacs-icon {
-	color: $accent-color;
-	fill: $accent-color;
-}
 .contacts-icon {
 	display: flex;
 	align-items: stretch;

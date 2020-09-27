@@ -23,14 +23,14 @@
 	border-radius: 50%;
 	background-color: $text-white-color;
 	transition: background-color 250ms $animation;
-}
 
-.social-icon-link:hover .social-icon {
-	fill: $text-white-color;
-}
+	&:hover .social-icon {
+		fill: $text-white-color;
+	}
 
-.social-icon-link:hover {
-	background-color: $accent-color;
+	&:hover {
+		background-color: $accent-color;
+	}
 }
 
 .social-icon-item:not(:last-child) {
@@ -69,14 +69,14 @@
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	transition: background-color 250ms $animation;
-}
 
-.footer-icon-link:hover .social-icon {
-	fill: $text-white-color;
-}
+	&:hover .social-icon {
+		fill: $text-white-color;
+	}
 
-.footer-icon-link:hover {
-	background-color: $accent-color;
+	&:hover {
+		background-color: $accent-color;
+	}
 }
 
 .social-icon-item:not(:last-child) {

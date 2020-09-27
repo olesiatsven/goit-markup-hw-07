@@ -3,154 +3,16 @@
 @import "./base/fonts";
 @import "./base/common";
 @import "./components/buttons";
+@import "./components/clients-icons";
 @import "./components/contacts";
 @import "./components/form";
-@import "./components/icons";
 @import "./components/logo";
 @import "./components/modal";
 @import "./components/social-icon";
 @import "./layouts/footer";
+@import "./layouts/gallery";
 @import "./layouts/hero";
 @import "./layouts/naviigation";
+@import "./layouts/radio-buttons";
 @import "./layouts/section";
 @import "./layouts/team";
-
-/* Portfolio */
-
-.body {
-	color: $title-text-color;
-	background-color: $background-color-main;
-}
-
-.section-portfolio {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
-/*Buttons portfolio */
-
-.button-list {
-	display: flex;
-	color: $title-text-color;
-	font-family: Roboto;
-	font-style: 400;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 26px;
-	padding-bottom: 34px;
-	letter-spacing: 0.03em;
-	/* margin-bottom: 34px; */
-	justify-content: center;
-	text-decoration: none;
-}
-
-.button-item {
-	/* width: calc(( 100% - 30px *4) / 5); */
-
-	padding: 6px 22px;
-	min-width: 73px;
-	margin-right: 8px;
-	border-radius: 4px;
-	justify-content: center;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.62;
-	text-align: center;
-	letter-spacing: 0.03em;
-	border: 1px solid transparent;
-	background-color: $background-color-button;
-	color: $title-text-color;
-	transition: color 250ms $animation, box-shadow 250ms $animation, background-color 250ms $animation;
-}
-
-.button-item:last-child {
-	margin-right: 0;
-}
-
-.button-list :focus,
-.button-list :hover {
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	color: $text-white-color;
-	background-color: $accent-color;
-}
-
-/* Projects portfolio */
-
-.portfolio-list {
-	display: flex;
-	flex-wrap: wrap;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	line-height: 30px;
-	letter-spacing: 0.03em;
-}
-.portfolio-item {
-	width: calc((100% - 30px * 2) / 3);
-	margin-right: 30px;
-	margin-bottom: 30px;
-	position: relative;
-	overflow: hidden;
-}
-
-.portfolio-item:hover {
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-item:nth-child(3n) {
-	margin-right: 0;
-}
-
-.portfolio-item:nth-last-child(-n + 3) {
-	margin-bottom: 0;
-}
-
-.portfolio-title {
-	color: $title-text-color;
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 36px;
-	letter-spacing: 0.06em;
-}
-.portfolio-text {
-	padding: 20px 24px;
-}
-
-/* Overlay */
-
-.overlay-text {
-	position: absolute;
-	width: 100%;
-
-	height: 100%;
-	padding: 63px 24px;
-	margin: 0;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.55;
-	letter-spacing: 0.03em;
-	color: $text-white-color;
-	opacity: 1;
-	transform: translateY(100%);
-
-	background: rgba(33, 150, 243, 0.9);
-
-	transition: transform 250ms $animation;
-	overflow: hidden;
-}
-
-.portfolio-image {
-	position: relative;
-	overflow: hidden;
-}
-
-.portfolio-item:hover .overlay-text {
-	opacity: 1;
-	transform: translateY(-100%);
-}
