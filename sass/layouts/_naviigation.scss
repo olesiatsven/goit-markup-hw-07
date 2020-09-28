@@ -28,20 +28,6 @@
 	line-height: 16px;
 	letter-spacing: 0.02em;
 
-	&:hover,
-	&:focus {
-		color: $accent-color;
-		transition: color 250ms $animation;
-	}
-}
-
-.site-nav .link.line:hover,
-.site-nav .link.line:focus,
-.site-nav .link.line {
-	color: $accent-color;
-}
-
-.site-nav .link {
 	position: relative;
 	content: "";
 	padding-top: 32px;
@@ -49,6 +35,18 @@
 	color: $title-text-color;
 	font-weight: 500;
 	transition: color 250ms $animation;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+		transition: color 250ms $animation;
+	}
+
+	&.line:hover,
+	&.line:focus,
+	&.line {
+		color: $accent-color;
+	}
 }
 
 .line::after {

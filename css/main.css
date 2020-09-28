@@ -356,7 +356,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact .list {
+.contacts .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +448,16 @@ a:hover svg {
   color: #212121;
 }
 
+.form-text {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0, 03em;
+  text-align: left;
+}
+
 .input-title {
   font-style: normal;
   font-family: "Roboto";
@@ -485,9 +495,16 @@ a:hover svg {
   margin-bottom: 10px;
 }
 
+.form-input:focus + .form-icon {
+  fill: #2196f3;
+}
+
+.form-input:not(:placeholder-shown) {
+  border-color: #2196f3;
+}
+
 .form-comment {
   width: 100%;
-  /* padding: 12px 16px; */
   margin: auto;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -497,14 +514,6 @@ a:hover svg {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-input:focus + .form-icon {
-  fill: #2196f3;
-}
-
-.form-input:not(:placeholder-shown) {
-  border-color: #2196f3;
 }
 
 .form-field input:focus {
@@ -517,6 +526,22 @@ a:hover svg {
   outline: none;
 }
 
+.checkbox {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.checkbox:checked ~ .icon-check {
+  background-color: #2196f3;
+  background-image: url(../image/iconcheck.svg);
+  background-origin: border-box;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #2196f3;
+}
+
 .checkbox-label {
   display: inline-block;
   -webkit-box-align: center;
@@ -525,16 +550,6 @@ a:hover svg {
   margin-top: 20px;
   margin-bottom: 30px;
   text-align: center;
-}
-
-.form-text {
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0, 03em;
-  text-align: left;
 }
 
 .checkbox-label .icon-check {
@@ -549,22 +564,6 @@ a:hover svg {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox:checked ~ .icon-check {
-  background-color: #2196f3;
-  background-image: url(../image/iconcheck.svg);
-  background-origin: border-box;
-  background-size: contain;
-  background-origin: border-box;
-  border-color: #2196f3;
-}
-
-.checkbox {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
 }
 
 /* submit-form */
@@ -1040,21 +1039,6 @@ a:hover svg {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-}
-
-.site-nav .link:hover, .site-nav .link:focus {
-  color: #2196f3;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link.line:hover,
-.site-nav .link.line:focus,
-.site-nav .link.line {
-  color: #2196f3;
-}
-
-.site-nav .link {
   position: relative;
   content: "";
   padding-top: 32px;
@@ -1063,6 +1047,16 @@ a:hover svg {
   font-weight: 500;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link:hover, .site-nav .link:focus {
+  color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link.line:hover, .site-nav .link.line:focus, .site-nav .link.line {
+  color: #2196f3;
 }
 
 .line::after {
